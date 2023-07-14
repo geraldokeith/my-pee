@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Dockville</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./images/logo-2.PNG"> 
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg">
+        <a href="index.html" class="navbar-brand fs-3 ms-3 text-white">Dock<span>Ville</span></a>
+
+        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+            <i class='bx bx-menu bx-md '></i>
+        </button>
+        <div class="collapse navbar-collapse ul-bg" id="btn">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link mx-3 text-white fs-5 ">Home</a>
+
+                </li>
+                <li class="nav-item">
+                    <!-- <a href="services.html" class="nav-link mx-3 text-white fs-5 ">services</a> -->
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle mx-3 text-white fs-5 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services  
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Car Parking Unit</a></li>
+                        <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Car Tire Clinic</a></li>
+                        <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Battery Section</a></li>
+                      </ul>
+                    </div>
+                
+                </li>
+                <li class="nav-item">
+                    <a href="about us.html" class="nav-link mx-3 text-white fs-5">About us</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link mx-3 text-white fs-5">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="signup.html" class="nav-link mx-3 text-white fs-5">Signup</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+   
+    <!-- form card -->
+    <div class="signup-form" style="max-width: 1235px;">
+      <div class="row g-0">
+
+        <div class="col-md-4">
+          <form id="formId" name="signupnow" action="#" onsubmit="return validate()" method="post">
+             <h2 style="color: white;">Sign Up</h2>
+            <div class="form-group">
+              <label for="sex">Sex:</label>
+              <select id="sex" name="sex" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+      
+              <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."> 
+            <span id="firstname-error"></span>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+             <span id="lastname-error"></span>
+            </div>
+           
+            <div class="form-group">
+              <label for="national-id">National ID Number:</label>
+              <input type="text" id="national-id" name="national-id" placeholder="Enter ID Number..">
+              <span id="national-id"></span>
+            </div>
+             <!-- <div class="form-group">
+               <label for="vechicle-type">Vechicle Type:</label>
+              <select id="vechicle-type" name="vechicle-type" required>
+                <option value="">Select</option>
+                <option value="Personal-cars">Personal-car(s)</option>
+                <option value="TruckS">Truck(s)</option>
+                <option value="Taxis">Taxi(s)</option>
+                <option value="Boda-bodas">Boda-boda(s)</option>
+                <option value="Coasters">Coaster(s)</option>
+              </select> </div>
+            <div class="form-group">
+              <label for="car-number">Vechicle Number Plate:</label>
+              <input type="text" id="car-number" name="car-number" placeholder="Enter Vechicle Number..">
+              <span id="car-number"></span>
+            </div> -->
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phoneNumber" name="phone" placeholder="Enter phone Number..">
+              <span id="phone-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter Email..">
+            <span id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="password">Create Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter Password..">
+              <span id="passwordError"></span>
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Password..">
+              <span id="confirm-passwordError"></span>
+            </div>
+            <div class="form-group">
+              <!-- <input type="submit" value="Sign Up"> -->
+              <button type="submit" onclick="validate()">signup</button>
+
+              <br><br>
+              <p style="text-align: left; color: black;"><b>OR</b></p>
+              <input type="submit" value="Login">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8" style="text-align: center;">
+          <p style="color: black;"><b>Ready To Serve...</b></p>
+          <img src="./images/parkin-lot-client.jpg" alt="a happy parking client" style="width: 760px; height: 486px; margin-top: 33px; font-size: medium;">
+        </div>
+      </div>
+        
+    </div>
+      
+    <footer>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p class="copyright" style="font-weight: bold;">© 2023 Dockville. All rights reserved.</p>
+    </footer>
+    
+    
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="formvalidation.js"></script>
+    
+</body>
+</html>

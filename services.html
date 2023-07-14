@@ -4,25 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>refactory</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Dockville</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./images/logo-2.PNG">
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Service</a>
-        <a href="contact.html">contact</a>
-        <a href="About.html">About</a>
+    <nav class="navbar navbar-expand-md bg">
+        <a href="index.html" class="navbar-brand fs-3 ms-3 text-white">Dock<span>Ville</span></a>
+    
+    <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#btn">
+        <i class='bx bx-menu bx-md '></i>
+    </button>
+    <div class="collapse navbar-collapse ul-bg" id="btn">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link mx-3 text-white fs-5 ">Home</a>
 
-    </nav>
-    <div class="city">
-        <h2>London</h2>
-        <p>London is the capital of England.</p>
-      </div>
+            </li>
+            <li class="nav-item">
+                
+                 <!-- <a href="services.html" class="nav-link mx-3 text-white fs-5 ">services</a> -->
+                 <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle mx-3 text-white fs-5 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services  
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Car Parkng Unit</a></li>
+                      <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Car Tire Clinic</a></li>
+                      <li><a class="dropdown-item  mx-3 text-white fs-5" href="#">Battery Section</a></li>
+                    </ul>
+                  </div>
+              
+
+            </li>
+            <li class="nav-item">
+                <a href="about us.html" class="nav-link mx-3 text-white fs-5">About us</a>
+
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link mx-3 text-white fs-5">Contact</a>
 
 
+            </li>
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link mx-3 text-white fs-5">Signup</a>
+            </li>
 
+        </ul>
+    
+    </div>
+</nav>
+<script src="./js/bootstrap.bundle.js"></script>
+<script src="dockviille.js"></script>
 </body>
 
 </html>
